@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+   .container{
+    width: 150px;
+    height: 150px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: 2px solid red;
+    transition-property: width;
+    transition-duration: 1s;
+   }
+   .container:hover{
+    width: 250px;
+   }
+
+
+
+
+   .circle{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    border-radius: 50%;
+
+  
+}
+@media only screen and  (min-width:200px) {
+ .circle 
+  {
+    background-color:red;
+  }
+}
+
+.animation{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+@keyframes example {
+    from{
+        background-color: crimson;
+    }
+    to{
+        background-color: yellow;
+    }
+    
+}
+
+#image{
+    width: 60%;
+    /* z-index:-1; */
+}
+
+#para{
+    position: absolute;
+    top: 155%;
+    left: 225px;
+    text-align: center;
+    color: rgb(41, 167, 85);
+    /* z-index: 1; */
+}
+#btn{
+    position: absolute;
+    top: 162%;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    left: 360px;
+    padding-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    border: 0px;
+    background-color: cyan;
+}
+#logo{
+    position: absolute;
+    top: 225%;
+    height: 100px;
+    width: 100px;
+}
+.header{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+    
+    
+    /* justify-content: space-between; */
+
+    
+}
+.btn1{
+    margin: 10px;
+    padding: 6px;
+    height: 35px;
+    width: 85px;
+    background-color: blanchedalmond;
+    border-radius: 4px;
+    
+
+
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+.card1{
+    width: 200px;
+    height: 200px;
+    background-color: fuchsia;
+}
+.card2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(217, 255, 0);
+}
+.card3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(38, 0, 255);
+
+}
+
+@media only screen and  (max-width:400px) {
+  .cards{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: absolute;
+   left: 120px;
+ 
+    /* border: 2px solid green; */
+  }
+    .card1{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 255, 229);
+    margin: 20px;
+}
+.card2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(152, 175, 19);
+    margin: 20px;
+}
+.card3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 60);
+    margin: 20px;
+
+} 
+    
+}
+    
+  @media only screen and (max-width:400px) {
+    .button {
+        position: absolute;
+        top: 1600px;
+        left: 140px;
+       
+
+    }
+    .backcolor{
+        border-radius: 2px solid green;
+        background-color: lawngreen;
+        height: 80px;
+        width: 250px;
+        padding: 20px;
+        font-size: 30px;
+        border-radius: 4px;
+        border: 0;
+        color:maroon;
+
+    }
+  }
+  @media only screen and (min-width:401px) and(max-width:820) {
+    .button {
+        position: absolute;
+
+        left: 140px;
+        border-radius: 2px solid green;
+        background-color: red;
+       
+
+    }
+    #button2{
+        border-radius: 2px solid green;
+        background-color: lawngreen;
+        height: 80px;
+        width: 250px;
+        padding: 20px;
+        font-size: 30px;
+        border-radius: 4px;
+        border: 0;
+        color:maroon;
+
+    }
+  }
+
+  .flex-container {
+  display: flex;
+  background-color: rgb(73, 115, 158);
+  
+  justify-content: space-between;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+ 
+ 
+    
+ .transition-box {
+  width: 10px;
+  height: 150px;
+  
+  transition: width 2s ;
+  margin: 20px;
+} 
+#div1 {
+    transition-timing-function: linear;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid green;
+    background-color: aqua;
+}
+
+
+#div3 {transition-timing-function: ease-in-out;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid green;
+    background-color: rgb(20, 71, 71);
+}
+
+
+#div2:hover{
+ width: 300px;
+}
+#div1:hover{
+ width: 300px;
+}
+#div3:hover{
+ width: 300px;
+}
+
+.l41{
+    background-color: limegreen;
+    animation: infinite an43 3s ease-in-out;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+}
+@keyframes an43 {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+.grid-container {
+  display: grid;
+  row-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+/* div  {
+  background-color: yellow;
+} */
+
+
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+   
+    </style>
+</head>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<body>
+    <h3>Replicate the button on Masthead of PrepBytes</h3>
+    <button style="width: 165px;height: 45px; ;font-size: 17px;color: white;background-color: rgb(92, 125, 231); border-radius:3px;border: 0px;" >Enroll Now</button>
+    <hr>
+    <h3>Write a text and add any google font </h3>
+    <p style="font-family:  Sofia, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, praesentium?</p>
+    <hr>
+  <h3>create a box and increase its width on hover , add transition on hover</h3>
+   <div class="container">
+
+   </div>
+   <br><br><hr>
+   <h3>Create a circle using border radius </h3>
+
+   <div class="circle">
+
+   </div>
+   <br><br><hr>
+   <h3>Write code to show any animation example</h3>
+
+   <div class="animation"></div>
+   <hr><br>
+   <h3>Create masterhead - add background image and put a text at the center , with button below it </h3>
+
+   <div class="masterhead">
+    <img id="image" src="./foodimg.webp" alt="">
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, iste!</p>
+    <button id="btn">Click here</button>
+
+   </div>
+
+   <br><br><br><br>
+
+   <h3>Create header -- left side will have logo and right side will have 4 button </h3>
+   <div>
+    <img id="logo" src="./logo.webp" alt="">
+   </div>
+
+   <div class="header">
+   
+    <button  class="btn1">Home</button>
+    <button class="btn1">Services</button>
+    <button class="btn1">Contact us</button>
+    <button class="btn1">login</button>
+   </div>
+   <br><br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br>
+  <h3>Create 3 cards of height & width 200 px with texts in it , the card should be horizontally placed in web view and vertically in mobile view</h3>
+   <div class="cards">
+    <div class="card1">Card1</div>
+    <div class="card2">Card2</div>
+    <div class="card3">Card3</div>
+   </div>
+<br><hr>
+<h3>Replicate the button on Masthead of PrepBytes, Change the background color of button for mobile view and ipad</h3>
+   <div class="button"  id="button1">
+    <button class="backcolor" id="button2">Enroll Now</button>
+
+   </div>
+   <hr>
+   <h3>Write code to show implementation of flex</h3>
+   <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+<h3>Show implementation of transition</h3>
+<div class="transition-box"> 
+<div id="div1">linear</div><br>
+
+<div id="div3">ease-in</div><br>
+</div> 
+<br><br><br><br><br><br><br><br>
+<hr><br><br>
+
+<h3>Show implementation of transformation</h3>
+<div class="l41">Transform</div>
+<hr><br><br>
+
+<h2>Show implementation of grid</h2>
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>  
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+
+</div> 
+
+<h4>What are CSS combinators ?</h4>
+<h3>Descendant Selector</h2>
+
+<p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+<h2>What are pseudo selectors in CSS?</h2>
+<h3>Styling a link depending on state</h3>
+
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+
+</body>
+</html>
